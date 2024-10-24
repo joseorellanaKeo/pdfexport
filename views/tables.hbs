@@ -1,0 +1,87 @@
+<header class="membrete">
+    <div class="membrete-container">
+        <img src="/public/images/logo.png" alt="Logo" class="logo">
+        <div class="membrete-text">
+            <div class="left-text">
+                <p>We pay,<br> you grow</p>
+            </div>
+            <div class="right-text">
+                <p>Data analytics</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-container">
+
+    <h1>Invalid Credentials</h1>
+    <table>
+        <thead>
+            <tr>
+                {{#each data.invalid_credentials.columns}}
+                <th>{{this}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data.invalid_credentials.data}}
+            <tr>
+                {{#each this}}
+                <td>{{this}}</td>
+                {{/each}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <h1>Risky Companies</h1>
+    <table>
+        <thead>
+            <tr>
+                {{#each data.risky_companies.columns}}
+                <th>{{this}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data.risky_companies.data}}
+            <tr>
+                {{#each this}}
+                <td>{{this}}</td>
+                {{/each}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <h1>Warning RFCs</h1>
+    <table>
+        <thead>
+            <tr>
+                {{#each data.warning_rfcs.columns}}
+                <th>{{this}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data.warning_rfcs.data}}
+            <tr>
+                {{#each this}}
+                <td>{{this}}</td>
+                {{/each}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <!-- Botón para exportar a PDF -->
+    <button id="exportPdfButton">Exportar a PDF</button>
+
+
+</div>
+
+<script>
+    document.getElementById('exportPdfButton').addEventListener('click', function () {
+        window.location.href = '/generate-pdf';
+    });
+</script>

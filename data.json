@@ -1,0 +1,24 @@
+{
+    "invalid_credentials": {
+      "columns": ["RFC", "NOMBRE", "NUMERO"],
+      "data": [
+        ["CEX910718C75", "Celular Express", 2],
+        ["CII050411H9A", "Comunicacion Inalambrica Inteligente", 2],
+        ["CIL010823HR3", "Corporacion Interamericana", 2]
+      ]
+    },
+    "risky_companies": {
+      "columns": ["RFC", "NOMBRE"],
+      "data": [
+        ["GOS2008187A4", "GREEN OIL SON"],
+        ["TEN110120MFA", "TRANSPORTES ESPECIALIZADOS NAVARRO"]
+      ]
+    },
+    "warning_rfcs": {
+      "columns": ["RFC", "NOMBRE","PERIODO ANTERIOR","PERIODO NUEVO", "PORCENTAJE DECRECIMIENTO"],
+      "data": [
+        ["ACA091221AY7", "Agrofrutas del Campo", 80276016.38, 52551304.87, "-34.54%"]
+      ]
+    }
+  }
+  

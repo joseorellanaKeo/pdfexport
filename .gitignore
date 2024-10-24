@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Directorios de logs
+logs
+*.log
+logs/*
+
+# Directorios de producción
+build/
+dist/
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de PDF generados
+public/pdfs/
